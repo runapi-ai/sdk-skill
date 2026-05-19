@@ -1,0 +1,10 @@
+{
+  "name": "sdk",
+  "version": "0.2.1",
+  "description": "RunAPI SDK routing skill for Claude Code, Codex, Gemini CLI, Cursor, and 50+ agents",
+  "skills": [
+    {
+      "path": "skills/sdk/SKILL.md"
+    }
+  ]
+}
