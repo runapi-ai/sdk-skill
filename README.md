@@ -1,5 +1,7 @@
 # RunAPI SDK Skill
 
+[![skills.sh](https://skills.sh/b/runapi-ai/sdk-skill)](https://skills.sh/runapi-ai/sdk-skill)
+
 Choose and install the right RunAPI model SDK for JavaScript, Ruby, or Go. This skill helps Claude Code, Codex, Gemini CLI, Cursor, and 50+ agents pick the correct SDK package and link to public docs.
 
 The canonical agent file is `skills/sdk/SKILL.md`.
@@ -7,7 +9,7 @@ The canonical agent file is `skills/sdk/SKILL.md`.
 ## Install
 
 ```bash
-npx skills add runapi-ai/sdk -g
+npx skills add runapi-ai/sdk-skill -g
 ```
 
 Or manually: clone this repo and copy `skills/sdk/` into your agent's skills directory.

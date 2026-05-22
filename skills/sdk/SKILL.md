@@ -3,6 +3,10 @@ name: sdk
 description: Choose and install RunAPI model SDKs for JavaScript, Ruby, and Go. Use when a user asks which RunAPI SDK package to install or how model SDKs relate to core-sdk.
 documentation: https://runapi.ai/docs#runapi-sdks
 catalog: https://runapi.ai/models
+metadata:
+  openclaw:
+    always: true
+    homepage: https://runapi.ai/docs#runapi-sdks
 ---
 
 # RunAPI SDK skill
