@@ -15,12 +15,17 @@
 </p>
 
 <p align="center">
-  <a href="https://runapi.ai/models.md"><strong>Model SDKs</strong></a> · <a href="https://skills.sh/runapi-ai/sdk-skill"><strong>Install Skill</strong></a> · <a href="https://www.skills.sh/runapi-ai"><strong>Agent Skills</strong></a> · <a href="https://github.com/runapi-ai/core-sdk"><strong>Core SDK</strong></a>
+  <a href="https://runapi.ai/models"><strong>Model SDKs</strong></a> · <a href="https://www.skills.sh/runapi-ai"><strong>Agent Skills</strong></a> · <a href="https://github.com/runapi-ai/core-sdk"><strong>Core SDK</strong></a>
 </p>
 
 <div align="center">
 
-[![skills.sh](https://skills.sh/b/runapi-ai/sdk-skill)](https://skills.sh/runapi-ai/sdk-skill)
+[![skills.sh](https://www.skills.sh/b/runapi-ai/sdk-skill)](https://www.skills.sh/runapi-ai/sdk-skill/sdk)
+[![ClawHub](https://img.shields.io/badge/ClawHub-runapi--sdk-111827)](https://clawhub.ai/runapi-ai/runapi-sdk)
+[![Model SDKs](https://img.shields.io/badge/Model%20SDKs-runapi.ai-0f766e)](https://runapi.ai/models)
+[![Core SDK](https://img.shields.io/badge/RunAPI-Core%20SDK-111827)](https://github.com/runapi-ai/core-sdk)
+[![Agent Skills](https://img.shields.io/badge/Agent%20Skills-skills.sh-2563eb)](https://www.skills.sh/runapi-ai)
+[![License](https://img.shields.io/github/license/runapi-ai/sdk-skill)](https://github.com/runapi-ai/sdk-skill/blob/main/LICENSE)
 
 </div>
 <br/>
