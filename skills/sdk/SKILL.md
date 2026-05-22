@@ -1,20 +1,50 @@
 ---
 name: sdk
-description: Choose and install RunAPI model SDKs for JavaScript, Ruby, and Go. Use when a user asks which RunAPI SDK package to install or how model SDKs relate to core-sdk.
-documentation: https://runapi.ai/docs#runapi-sdks
-catalog: https://runapi.ai/models
+description: Choose RunAPI SDK packages for application developers building web apps, backends, workers, or libraries. Use when the user asks to integrate RunAPI into code, pick JavaScript/Ruby/Go packages, or understand core-sdk vs model SDKs. Do not use for one-off generation or agent-executed media tasks; use the RunAPI CLI or the relevant model skill instead.
+documentation: https://runapi.ai/models.md
+catalog: https://runapi.ai/models.md
 metadata:
   openclaw:
     always: true
-    homepage: https://runapi.ai/docs#runapi-sdks
+    homepage: https://runapi.ai/models
 ---
 
-# RunAPI SDK skill
+# RunAPI SDK selection
 
-Use this skill to choose a RunAPI model SDK, explain package names, and keep links pointed at RunAPI public assets.
+Use this skill to help an **application developer** pick and wire up RunAPI SDK
+packages for JavaScript, Ruby, or Go.
 
-Rules:
-- Use `@runapi.ai/core`, `runapi-core`, and `github.com/runapi-ai/core-sdk/go` only for shared SDK primitives.
-- Use concrete model packages such as `@runapi.ai/suno`, `runapi-suno`, and `github.com/runapi-ai/suno-sdk/go` for model SDKs.
-- Link users to https://runapi.ai/models for the model catalog and https://runapi.ai/docs#runapi-sdks for SDK docs.
-- Keep API keys in `RUNAPI_API_KEY` and never commit secrets.
+## When NOT to use this skill
+
+Do not use for one-off generation or agent-executed media tasks. If the user
+just wants an agent to create, edit, transform, or transcribe media once, use
+the RunAPI CLI (the `runapi-cli` skill) or the relevant model skill instead —
+not an SDK.
+
+Reach for an SDK only when building a web app, backend, worker, library, or
+production codebase that calls RunAPI from its own code.
+
+## Core SDK vs model SDKs
+
+- **Core SDK** — shared client primitives (auth, HTTP, polling, errors). Install
+  it transitively via a model SDK; depend on it directly only for custom
+  clients.
+  - JavaScript / TypeScript: `@runapi.ai/core`
+  - Ruby: `runapi-core`
+  - Go: `github.com/runapi-ai/core-sdk/go`
+- **Model SDKs** — one typed package per model line, built on the core SDK.
+  - JavaScript / TypeScript: `@runapi.ai/<model>` (e.g. `@runapi.ai/suno`)
+  - Ruby: `runapi-<model>` (e.g. `runapi-suno`)
+  - Go: `github.com/runapi-ai/<model>-sdk/go`
+
+Install only the model SDKs an application actually uses; each pulls the core
+SDK as a dependency.
+
+## Authentication
+
+Keep the RunAPI API key in `RUNAPI_API_KEY` (or pass it to the client
+constructor); never commit secrets.
+
+## References
+
+- Browse every RunAPI model and SDK package: https://runapi.ai/models.md
