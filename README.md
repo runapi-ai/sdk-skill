@@ -1,6 +1,29 @@
-# RunAPI SDK Skill
+<p align="center">
+  <a href="https://runapi.ai">
+    <img src="https://runapi.ai/icon.svg" height="56" alt="RunAPI">
+  </a>
+</p>
+
+<p align="center">
+  <a href="https://github.com/runapi-ai/sdk-skill">
+    <h3 align="center">RunAPI SDK Skill</h3>
+  </a>
+</p>
+
+<p align="center">
+  Choose the right RunAPI model SDK package for JavaScript, Ruby, or Go.
+</p>
+
+<p align="center">
+  <a href="https://runapi.ai/models.md"><strong>Model SDKs</strong></a> · <a href="https://skills.sh/runapi-ai/sdk-skill"><strong>Install Skill</strong></a> · <a href="https://www.skills.sh/runapi-ai"><strong>Agent Skills</strong></a> · <a href="https://github.com/runapi-ai/core-sdk"><strong>Core SDK</strong></a>
+</p>
+
+<div align="center">
 
 [![skills.sh](https://skills.sh/b/runapi-ai/sdk-skill)](https://skills.sh/runapi-ai/sdk-skill)
+
+</div>
+<br/>
 
 Choose and install the right RunAPI model SDK for JavaScript, Ruby, or Go. This skill helps Claude Code, Codex, Gemini CLI, Cursor, and 50+ agents pick the correct SDK package and link to public docs.
 
