@@ -20,7 +20,7 @@
 
 <div align="center">
 
-[![skills.sh](https://www.skills.sh/b/runapi-ai/sdk-skill)](https://www.skills.sh/runapi-ai/sdk-skill/sdk)
+[![skills.sh](https://www.skills.sh/b/runapi-ai/sdk-skill)](https://www.skills.sh/runapi-ai/sdk-skill/runapi-sdk)
 [![ClawHub](https://img.shields.io/badge/ClawHub-runapi--sdk-111827)](https://clawhub.ai/runapi-ai/runapi-sdk)
 [![License](https://img.shields.io/github/license/runapi-ai/sdk-skill)](https://github.com/runapi-ai/sdk-skill/blob/main/LICENSE)
 
@@ -29,7 +29,7 @@
 
 Choose and install the right RunAPI model SDK for JavaScript, Ruby, or Go. This skill helps Claude Code, Codex, Gemini CLI, Cursor, and 50+ agents pick the correct SDK package and link to public docs.
 
-The canonical agent file is `skills/sdk/SKILL.md`.
+The canonical agent file is `skills/runapi-sdk/SKILL.md`.
 
 ## Install
 
@@ -40,10 +40,10 @@ npx skills add runapi-ai/sdk-skill -g
 Or paste this prompt to your AI agent:
 
 ```text
-Install the sdk skill for me:
+Install the runapi-sdk skill for me:
 
 1. Clone https://github.com/runapi-ai/sdk-skill
-2. Copy the skills/sdk/ directory into your
+2. Copy the skills/runapi-sdk/ directory into your
    user-level skills directory (e.g. ~/.claude/skills/
    for Claude Code, ~/.codex/skills/ for Codex).
 3. Verify that SKILL.md is present.
@@ -63,11 +63,18 @@ npm install @runapi.ai/elevenlabs   # ElevenLabs audio
 
 All RunAPI model SDKs share `@runapi.ai/core` for HTTP primitives and error types.
 
+Generated file URLs returned by RunAPI are temporary. For production
+integrations, download and store images, videos, audio, or other generated
+files in your own durable storage within 7 days.
+
 ## Use this skill when
 
 - A user asks which JavaScript, Ruby, or Go RunAPI SDK package to install.
 - A user asks why each model has its own model SDK repository.
 - An agent needs to route pricing or documentation links without guessing URL shapes.
+
+For one-off generation, manual smoke tests, debugging, or user-requested CLI
+runs, use the RunAPI CLI skill instead: https://github.com/runapi-ai/cli-skill.
 
 ## Links
 
